@@ -1,0 +1,63 @@
+.screen{
+}
+
+.screen-border{
+  padding: 1.5rem;
+  padding-block-end: calc(2.75rem - 18.875rem);
+  border-radius: .5rem;
+  background-color: var(--white);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 2rem 100%, 0 calc(100% - 2.75rem) );
+  box-sizing: border-box;
+}
+
+.screen-safeArea{
+  padding: 1rem;
+  background-color: #8db9dc;
+  border-radius: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 10rem;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.screen-footer{
+  display: flex;
+  /* margin-block-start: .875rem; */
+  padding-block: .875rem;
+}
+
+.screen-footer .span-container{
+  display: flex;
+  gap: 1rem;
+  margin: auto
+}
+
+.screen-footer span{
+  display: inline-block;
+  block-size: 1rem;
+  inline-size: 1rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+.screen-footer .menu{
+  block-size: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: .125rem;
+}
+
+.screen-footer  .menu span{
+  border-radius: 0;
+  display: block;
+  padding: 0;
+  block-size: .125rem;
+  background-color: var(--secondary);
+  justify-self: flex-end; 
+}
+
+
+
