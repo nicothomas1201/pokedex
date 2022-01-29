@@ -11,7 +11,7 @@
   <title>Pokedex</title>
 </head>
 <body>
-  <main class="pokedex " tabindex="0">
+  <main class="pokedex is-open" tabindex="0">
     <section class="pokedex-main" aria-label="Informacion general del pokemon">
       <div class="header-shadow">
         <div class="header">
@@ -40,7 +40,13 @@
         </div>
       </div>
       <div class="actions">
-        <div class="variants">variants</div>
+        <div class="variants">
+          <button></button>
+          <div class="button-container">
+            <button></button>
+            <button></button>
+          </div>
+        </div>
         <form role="search" id="form" class="search">
           <input type="text" name="id" placeholder="¿Quien es ese pokemon?" autocomplete="off">
         </form>

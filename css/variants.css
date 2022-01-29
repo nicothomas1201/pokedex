@@ -1,3 +1,40 @@
 .variants{
   grid-area: variants;
+  display: flex;
+  align-items: center;
+  gap: 2.125rem;
 }
+
+.variants .button-container{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.variants button{
+  border: none;
+  block-size: 3rem;
+  inline-size: 3rem;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  box-shadow:  2px 2px 0 #300F16;
+  cursor: pointer;
+}
+
+.variants button:active{
+  transform: scale(.9);
+}
+
+.variants .button-container button{
+  border-radius: .5rem;
+  block-size: .4375rem;
+  inline-size: 1.8125rem;
+  box-shadow:  1px 1px 0 #300F16;
+
+}
+
+.variants .button-container button:first-of-type{
+  background-color: #FECB2F;
+  box-shadow:  1px 1px 0 #D2AB33;
+
+}
+
