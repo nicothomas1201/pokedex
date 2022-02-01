@@ -1,5 +1,5 @@
-.screen{
-}
+/* .screen{
+} */
 
 .screen-border{
   padding: 1.5rem;
@@ -20,6 +20,7 @@
   block-size: 10rem;
   box-sizing: border-box;
   background-size: cover;
+  background-position: center;
 }
 
 .screen-footer{

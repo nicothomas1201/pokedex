@@ -1,3 +1,5 @@
+import { setDescription } from "./pokedex.js"
+
 const BASE_API = 'https://pokeapi.co/api/v2/'
 
 export async function getPokemon(id){
@@ -6,7 +8,7 @@ export async function getPokemon(id){
     const data = await response.json()
     return data
   } catch(err){
-    throw `no fue posible obtener el pokemon ${err}`
+    // setDescription('no se pudo encotrar al pokemon')
   }
 }
 
@@ -14,8 +16,8 @@ export async function getSpecies(id){
   try{
     const response = await fetch(`${BASE_API}pokemon-species/${id}/`)
     const data = await response.json()
-    return {isError: false, data}
+    return  data
   } catch (err){
-    throw `No fue posible obtener la descripcion del pokemon ${err}`
+    setDescription('no se pudo encotrar al pokemon')
   }
 }

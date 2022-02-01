@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
   <title>Pokedex</title>
-  <meta property="og:title" content="The Rock" />
+  <meta property="og:title" content="Pokedex"/>
   <meta property="og:type" content="page.html" />
   <meta property="og:url" content="https://pokedex-taupe-psi.vercel.app/" />
   <meta property="og:image" content="./design/Pokedex.jpg" />
@@ -18,11 +18,11 @@
           cons sus caracteristicas y poderes" />
 </head>
 <body>
-  <main class="pokedex is-open" tabindex="0">
+  <main class="pokedex is-open" id="pokedex" tabindex="0">
     <section class="pokedex-main" aria-label="Informacion general del pokemon">
       <div class="header-shadow">
         <div class="header">
-          <span class="light is-big is-sky"></span>
+          <span class="light is-big is-sky" id="light"></span>
           <span class="light is-red"></span>
           <span class="light is-yellow"></span>
           <span class="light is-green"></span>
@@ -30,7 +30,7 @@
       </div>
       <div class="screen">
         <div class="screen-border">
-          <div class="screen-safeArea">
+          <div class="screen-safeArea" id="screen">
             <img src="" alt="" id="image">
           </div>
           <div class="screen-footer">
@@ -49,7 +49,7 @@
       </div>
       <div class="actions">
         <div class="variants">
-          <button></button>
+          <button id="random-pokemon"></button>
           <div class="button-container">
             <button></button>
             <button></button>
@@ -62,7 +62,7 @@
           <p id="description">Buca a un pokemon para obtener todas sus caracteristicas</p>
         </div>
         <div class="navigation">
-          <button id="nex-pokemon" class="navigation-right" aria-label="Siguiente Pokemon"></button>
+          <button id="next-pokemon" class="navigation-right" aria-label="Siguiente Pokemon"></button>
           <button id="prev-pokemon" class="navigation-left" aria-label="Pokemon Anterior"></button>
           <button id="next-image" class="navigation-down" aria-label="Siguiente Imagen"></button>
           <button id="prev-image" class="navigation-up" aria-label="Imagen Anterior"></button>
